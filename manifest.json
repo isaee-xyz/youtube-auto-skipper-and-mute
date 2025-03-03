@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Viewing Enhancer",
+    "version": "1.0.0",
+    "description": "Improves the YouTube viewing experience by enhancing video controls",
+    "author": "Isaee (twinklegarg008@gmail.com)",
+    "permissions": ["storage"],
+    "action": {
+      "default_title": "Viewing Settings"
+    },
+    "icons": {
+      "128": "assets/icon.png"
+    },
+    "background": {
+      "service_worker": "scripts/worker.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["scripts/content.js"],
+        "run_at": "document_end",
+        "all_frames": true
+      },
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["scripts/enhancer.js"],
+        "run_at": "document_start",
+        "world": "MAIN",
+        "all_frames": true
+      }
+    ],
+    "options_page": "pages/options.html"
+  }

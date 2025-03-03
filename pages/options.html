@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Viewing Enhancer Settings</title>
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --text-color: #202124;
+      --card-bg: white;
+      --border-color: #dadce0;
+      --accent-color: #065fd4;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #202124;
+        --text-color: #e8eaed;
+        --card-bg: #303134;
+        --border-color: #3c4043;
+        --accent-color: #8ab4f8;
+      }
+    }
+    
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: var(--text-color);
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <viewer-settings></viewer-settings>
+  
+  <footer>
+    YouTube Viewing Enhancer v1.0.0 | Created by Isaee (twinklegarg008@gmail.com)
+  </footer>
+  
+  <script src="options.js"></script>
+</body>
+</html>
