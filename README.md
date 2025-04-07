@@ -53,4 +53,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
  
 ## Author
  
-Created by Isaee (twinklegarg008@gmail.com)
+Created by Isaee (support@annusmirabilis.io)
